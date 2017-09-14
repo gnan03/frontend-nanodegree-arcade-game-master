@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="js/app.js"></script>
+	<div id="score_msg" style="display:none">
+		<p><h1>Congratulations,you won!</h1>
+		<br><p>Your score:</p><p id="score"></p>
+	</div>
+	<div id="select_level">
+        <h2>SELECT LEVEL</h2>
+        <select id="levels" class="dropdown-content">
+           <option value="1">One</option>
+  		   <option value="2">Two</option>
+           <option value="3">Three</option>
+        </select>
+        <br>
+        <button type="button" onclick="setLevel()">Begin</button>
+    </div>
+    <div>
+       <canvas id="canvas" width="505" height="606" style="display:none">
+       </canvas>
+    </div>
+	<script src="js/resources.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
